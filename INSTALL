@@ -1,0 +1,26 @@
+Installing ADGMix
+-----------------
+
+Well making and installing ADGMix is very simple,
+provide that you have the handy pkg-config, anyway
+if you have compiled other programs chances are you 
+have it already on your system, you must follow the
+standard make chain, to do so just type:
+
+make
+
+and for installing adgmix systemwide:
+(you need to be root to do this)
+
+make install
+
+The Makefile needs a lot of work, so be patient
+if it 'just not works as espected', if so please
+dropme a line and i will do my best to solve your
+problem (see the manpage or the README file 
+for contact information).
+
+Please note that this is a development release
+and it could have bugs that could cause serious
+damage to your system/life/computer, so becareful
+and stay in tune for the stable release .-)

@@ -1,0 +1,55 @@
+.TH ADGMix 1 local
+.SH NAME
+.B adgmix 
+\- Graphically control soundcard mixer channels
+.SH "SYNOPSIS"
+.ll +8
+.B adgmix 
+.ll -8
+.SH "DESCRIPTION"
+.PP
+.I adgmix
+is a tool that lets you set the levels of your soundcard mixer channels
+.PP
+With adgmix you can control any
+.B OSS
+suported sound card mixer, there are no command line options and no console
+based main program so you will need a working X11 display to use it, this
+could change in future releases but by now, that's just the way it is
+.PP
+Thats all by now, stay in tune for other stable releases.
+.PP
+.SH "VERSION"
+.PP
+This is the 0.0.1 version of this software
+.PP
+.SH "BUGS"
+.PP
+Many, you can almost writte a book with them :-)
+.PP
+.SH "AUTHOR"
+Written by Reynaldo H. Verdejo Pinochet
+.BR
+.B rverdejo@udec.cl
+.SH "COPYRIGHT NOTICE"
+.PP
+This software have been realesed under the GNU GPL v2.0
+.PP
+This is a 
+.B free
+software, see the source for copying conditions. There is NO warranty; not
+even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+.PP
+.SH "SEE ALSO"
+.PP
+There is no documentation in Texinfo format yet, in the mean time you can
+point your beloved lynx variant to 
+.PP
+.I http://sv.nongnu.org/projects/adgmix/ 
+.PP
+while there, suscribe to our
+low traffic mailing list 
+.I adgmix-testers
+and check for the latest version, there is a lot of work being 
+currently done in adgmix so every cvs commit is usually a major change :-)
+.PP
