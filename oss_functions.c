@@ -39,14 +39,11 @@ int
 mixer_change_vols (int dev, int new_vol)
 {
   extern int mixerfd;
-  if (ioctl (mixerfd, MIXER_WRITE (dev), &new_vol) == -1)
-    {
-      return (0);
-    }
-  else
-    {
-      return (1);
-    }
+  if (ioctl (mixerfd, MIXER_WRITE (dev), &new_vol) == -1) {
+    return (0);
+  } else {
+    return (1);
+  }
 }
 
 int
@@ -54,28 +51,23 @@ mixer_check_vol (int dev)
 {
   extern int mixerfd;
   int k;
-  if (ioctl (mixerfd, MIXER_READ (dev), &k) == -1)
-    {
-      return (-1);
-    }
-  else
-    {
-      return (k);
-    }
+  if (ioctl (mixerfd, MIXER_READ (dev), &k) == -1) {
+    return (-1);
+  } else {
+    return (k);
+  }
 }
+
 int
 mixer_check_available_chans (void)
 {
   extern int mixerfd;
   int k;
-  if (ioctl (mixerfd, MIXER_READ (SOUND_MIXER_DEVMASK), &k) == -1)
-    {
-      return (-1);
-    }
-  else
-    {
-      return (k);
-    }
+  if (ioctl (mixerfd, MIXER_READ (SOUND_MIXER_DEVMASK), &k) == -1) {
+    return (-1);
+  } else {
+    return (k);
+  }
 }
 
 int
@@ -83,14 +75,11 @@ mixer_check_stereo_chans (void)
 {
   extern int mixerfd;
   int k;
-  if (ioctl (mixerfd, MIXER_READ (SOUND_MIXER_STEREODEVS), &k) == -1)
-    {
-      return (-1);
-    }
-  else
-    {
-      return (k);
-    }
+  if (ioctl (mixerfd, MIXER_READ (SOUND_MIXER_STEREODEVS), &k) == -1) {
+    return (-1);
+  } else {
+    return (k);
+  }
 }
 
 int
@@ -98,21 +87,17 @@ mixer_open (void)
 {
   extern int mixerfd;
   mixerfd = open (MIXER, O_RDWR);
-  if (mixerfd < 0)
-    {
-      return (-1);
-    }
-  else
-    {
-      return (0);
-    }
+  if (mixerfd < 0) {
+    return (-1);
+  } else {
+    return (0);
+  }
 }
 
 void
 mixer_close (void)
 {
   extern int mixerfd;
-  if (close (mixerfd) == -1)
-    {
-    }
+  if (close (mixerfd) == -1) {
+  }
 }

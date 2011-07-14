@@ -23,20 +23,10 @@
 #define MIXER "/dev/mixer"
 #define MAX_ELEMENTS SOUND_MIXER_NRDEVICES
 
-
-
-int
-build_chan_mask (int device_subs, int left_subs, int right_subs);
-int
-mixer_change_vols (int dev, int new_vol);
-int 
-mixer_check_vol (int dev);
-int 
-mixer_check_available_chans (void);
-int
-mixer_check_stereo_chans (void);
-int 
-mixer_open (void);
-void 
-mixer_close (void);
-
+int build_chan_mask (int device_subs, int left_subs, int right_subs);
+int mixer_change_vols (int dev, int new_vol);
+int mixer_check_vol (int dev);
+int mixer_check_available_chans (void);
+int mixer_check_stereo_chans (void);
+int mixer_open (void);
+void mixer_close (void);
