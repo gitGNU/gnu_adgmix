@@ -1,23 +1,18 @@
-		ADGMix
-	Another Damn Gtk Mixer
-	----------------------
-	
-	by Reynaldo H. Verdejo P
-	rverdejo@udec.cl
+ADGMix (Another Damn Gtk Mixer)
 
 
 Description
 -----------
 
-ADGMix is a graphical tool that lets you interface 
-with your soundcard's mixer, it was writen using 
-the OSS (Open Sound System) API and the gtk toolkit 
-library. 
+ADGMix is a graphical tool that lets you interface
+with your soundcard's mixer, it was writen using
+the OSS (Open Sound System) API and the gtk toolkit
+library.
 
 Requirements
 ------------
 
-You must have sys/soundcard.h, the one that comes 
+You must have sys/soundcard.h, the one that comes
 in most GNU Linux boxes with the default OSS setup
 should do the trick. You also must have an OSS supported
 soundcard (alsa supported card with OSS emulation should
@@ -27,10 +22,14 @@ library (2.0) and a working c compiler.
 Geting the source
 -----------------
 
-There is no official realese yet, but the version
-on the CVS is working just fine.  The main CVS 
-repository is on subversions.gnu.org (/cvsroot/adgmix)
+There is no official release (and to be honest
+being this little more than an example there
+would probably never be one), but the version
+in GIT is working just fine:
 
+git://git.sv.gnu.org/adgmix.git
+ssh://git.sv.gnu.org/srv/git/adgmix.git
+http://git.savannah.gnu.org/r/adgmix.git
 
 Installing ADGMix
 -----------------
@@ -48,36 +47,18 @@ thanks to a bunch of drunk betatesters and helpers
 Matias Atria
 Basilio Kublik
 Jaime Ramirez
-Mauricio Sanzana 
+Mauricio Sanzana
 Put-Your-Name-Here
 
-The Author
-----------
-
-if you have taked the time to reach this part
-of the README I asume you must be wondering
-who the hell toke the time to wrote it :-)
-
-well, I'm Reynaldo H. Verdejo P.  a
-wana-be-engenier who does not speak english
-very well. I'm also a web developer and a
-part time human being who is trying to return
-to the Open Source comunity part of the work
-it has made for him.
-
-if you use ADGMix and like it (hope so)
+If you use ADGMix and like it (hope so)
 or if you have questions related to it
 you could reach me by email to:
 
-rverdejo@opendot.cl
+reynaldo AT opendot cl
 
 You can also suscribe to the adgmix-testers
-mailing list. To do so point your browser to:
+mailing list at:
 
 http://mail.nongnu.org/mailman/listinfo/adgmix-testers
 
-
 That's all folks, hope you like it!
-
-Another Damn Gtk Mixer http://sv.nongnu.org/projects/adgmix
------------------------------------------------------------
