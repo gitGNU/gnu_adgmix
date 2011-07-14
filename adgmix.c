@@ -139,8 +139,7 @@ open_about (GtkWidget * widget, gpointer data)
   
   about_label1 = gtk_label_new("Another Damn Gtk Mixer\n"\
   "http://sv.nongnu.org/projects/adgmix\n"\
-  "Coded by Reynaldo H. Verdejo Pinochet\n"\
-  "rverdejo@opendot.cl");
+  "Reynaldo H. Verdejo Pinochet <reynaldo AT opendot cl>");
   
   about_pixbuf = gdk_pixbuf_new_from_xpm_data(logo_xpm);
   about_image = gtk_image_new_from_pixbuf(about_pixbuf);
@@ -173,9 +172,6 @@ get_table_cols_needed (void)
   int stereo_devs, supported_mask;
   int i, k, l;
   l = 0;
-
-
-
 
   if (mixer_open () == -1)
   {
